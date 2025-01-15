@@ -137,6 +137,7 @@ public class UserService {
 ## Example Endpoints
 - `POST /users`: Create a new user.
 - `DELETE /users/{id}`: Delete a user.
+- `GET /users/action?username=luisfigo`: Perform an action.
 
 ## Conclusion
 This project demonstrates how to implement AOP-based audit logging using Spring AOP. By separating cross-cutting concerns like logging, we achieve cleaner and more maintainable code. Let me know if you have any questions or suggestions!
