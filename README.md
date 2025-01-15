@@ -59,11 +59,11 @@ public class AuditLoggingAspect {
         // Capture and log details
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Loggable loggable = signature.getMethod().getAnnotation(Loggable.class);
-        
+
         String action = loggable.action();
         String methodName = signature.getName();
         String arguments = Arrays.toString(joinPoint.getArgs());
-        
+
         AuditLog auditLog = new AuditLog();
         auditLog.setAction(action);
         auditLog.setMethodName(methodName);
@@ -140,4 +140,10 @@ public class UserService {
 
 ## Conclusion
 This project demonstrates how to implement AOP-based audit logging using Spring AOP. By separating cross-cutting concerns like logging, we achieve cleaner and more maintainable code. Let me know if you have any questions or suggestions!
+
+---
+
+### Author
+**Yassine CHALH**  
+A passionate developer exploring the boundaries of Spring Boot and AOP for cleaner, scalable applications. Connect with me on [LinkedIn](https://www.linkedin.com/in/yassine-chalh/) or [GitHub](https://github.com/yaashall01).
 
